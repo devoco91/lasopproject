@@ -25,7 +25,7 @@ function Footer() {
                 <div className="col-md-4 contact">
                     <h5>Contact</h5>
                     <div className="row">
-                        <div className="col-md-1"><i class="fa-solid fa-location-dot"></i></div>
+                        <div className="col-md-1"><i className="fa-solid fa-location-dot"></i></div>
                         <div className="col-md-8"><p className='para'>No. 86, Olowoira Road, by Solomon avenue junctinon, Olowoira, off Ojodu-Berger, Lagos, Nigeria. </p></div>
                     </div>
                     

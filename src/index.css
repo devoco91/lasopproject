@@ -11,3 +11,256 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FAQs */
+
+:root{
+  --bluebg:linear-gradient(104.24deg, #000066 22.75%, #0D6EFD 168.68%);
+  --accordionbg : #DAE2FF;
+}
+
+.faqs, .full-faq{
+  background: var(--bluebg);
+}
+
+.lasop .accordion-question{
+  cursor: pointer;
+  flex-direction: row;
+  background-color: #021583;
+  color: #ffffff;
+  font-weight: 500;
+} 
+
+
+.lasop .accordion, .full-faq .accordions{
+  max-width: 90%;
+  padding: 1rem;
+  margin: auto;
+}
+
+.lasop .accordion-question, .accordion-answer{
+  padding: 1rem;
+  margin: 0 1px;
+}
+.lasop .accordion-answer, .full-faq .accordion-answer{
+  background-color:var(--accordionbg) ;
+  color:var(--bluebg);
+  font-weight: 500;
+}
+
+.active_faq{
+  border: 2px solid #ffffff;
+  width: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 700;
+  align-items: center;
+}
+
+@media (max-width: 576px){
+  .active_faq{
+      border: 1px solid #ffffff;
+      width: 10%;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: 700;
+      padding: 10px;
+      align-items: center;
+      }
+  
+      .lasop .accordion-question{
+        font-size: 12px;
+        align-items: center;
+      } 
+
+      .lasop .accordion-answer, .full-faq .accordion-answer{
+        font-size: 12px;
+      }
+}
+
+.lasop .faqs .btn{
+  width:12%;
+  color: #021583;
+  font-weight: 600;
+}
+
+@media (max-width: 576px){
+  .lasop .faqs .btn{
+      width:40%;
+  }
+}
+
+.full-faq .qa-img{
+  width: 15%;
+}
+
+
+
+/* LE */
+
+
+.lasop .student3{
+  position: absolute;
+  top: 40%;
+  right: -15%;
+}
+
+.lasop .student2{
+  position: relative;
+  top: 1rem;
+}
+
+
+@media(max-width:576px){
+
+  .lasop .student3{
+    width: 50%;
+    margin-top: 2rem;
+  }
+
+  .lasop .student2{
+    width: 50%;
+  }
+  
+
+
+  .lasop .blue-line{
+    transform: rotate(90deg);
+  }
+
+  .lasop .get-btn{
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+.lasop .learn h1{
+  font-weight: 700;
+  line-height: 60px;
+}
+.lasop .learn p{
+  width: 60%;
+  font-weight: 600;
+}
+.lasop .learn button{
+  background-color: #000066;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+@media(max-width:576px){
+  .lasop .learn h1{
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+  }
+
+  .lasop .learn p{
+    text-align:left;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+ .lasop .started{
+  background: #E0E0FF;
+  
+}
+.lasop .started .everything-text{
+  font-size: 40px;
+  font-weight: 700;
+  width: 65%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  margin-top: 2rem ;
+}
+
+.lasop .everything-blue-line2{
+  display: none;
+}
+
+.lasop .everything-blue-line{
+  width: 10%;
+  margin-right: 2rem;
+  display: inline;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+@media(max-width:576px){
+  .lasop .everything-blue-line{
+    display: none;
+  }
+
+  .lasop .everything-blue-line2{
+    display:block ;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+   }
+
+   .lasop .started .everything-text{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  }
+
+
+
+
+  /* Contact */
+
+  .form{
+    background-image: url(./assets/contactbg.png);
+    background-size: contain;
+    background-repeat: repeat;
+  }
+
+  .form .m-auto{
+    width: 50%;
+  }
+
+  @media(max-width:576px){
+    .form .m-auto{
+      width: 100%;
+    }
+
+    .form{
+      background-size: cover;
+      
+    }
+  }
+
+  .form .form-title{
+    color: #0D6EFD;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .form input , .message textarea{
+    background-color: #DAE2FF;
+    border: 1px solid #000000; 
+  }
+
+  .form input, .message textarea::placeholder{
+    font-weight: 600;
+  }
+
+  .form .btn{
+    background-color: #000066;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+  }
