@@ -3,6 +3,7 @@ import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 
 import onboardSlice from './Slices/onboardslice'
+import cohortSlice from './Slices/cohortslice'
 
 const persistConfig = {
   key: 'root',
@@ -10,7 +11,8 @@ const persistConfig = {
 }
  
 const rootReducer = combineReducers({
-  onboard: onboardSlice
+  onboard: onboardSlice,
+  cohort: cohortSlice
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

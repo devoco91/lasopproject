@@ -14,7 +14,8 @@ import user4 from "./../../assets/user4.png"
 import poster from "./../../assets/poster.png"
 import programming from "./../../assets/programming.mp4"
 import doubleline from "./../../assets/double.png"
-
+import Navbar from './../navbarfiles/Navbar'
+import Footer from './../footerfiles/Footer'
 
 
 
@@ -45,28 +46,29 @@ function CourseCard() {
   return (
 
 
-    
+    <>
+    <Navbar/>
 
     <div className='course'>
 
       <div className="coursehero p-3">
 
-        <div className="container p-5">
+        <div className="container p-md-5 p-1">
           <div className="row align-items-center">
             <div className='col-md-6 col-12'>
               <h2 className="h2"> {pageData?.dpt1} <br /> {pageData?.dpt2} </h2>
               <p className='p'>{pageData?.bannerText}</p>
               <div className='info-btn container-fluid'>
-                <div className="row align-items-center">
+                <div className="row align-items-center gap-1">
                  {pageData?.bannerBtn?.map((buttonInfo) => (
-                  buttonInfo?.text !== "" && <small className='text-center p-1 col-6 col-2 mx-1 my-1 '> {buttonInfo?.icon !== "" && buttonInfo?.icon} {buttonInfo?.text}</small>
+                  buttonInfo?.text !== "" && <small className='text-center p-1 col-5 '> {buttonInfo?.icon !== "" && buttonInfo?.icon} {buttonInfo?.text}</small>
                  ))}
                   
                 </div>
               </div>
             </div>
 
-            <div className="col-md-6 col-12 d-none d-md-block">
+            <div className="col-md-6 col-12 my-3 my-md-0">
 
               <div className="outerbox">
                 <p className='text-white fw-bold text-center'>Get Started Today</p>
@@ -224,6 +226,10 @@ function CourseCard() {
       </div>
 
     </div>
+
+    <Footer/>
+
+    </>
 
     
 

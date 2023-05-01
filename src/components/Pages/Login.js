@@ -3,7 +3,8 @@ import classroom from "./../../assets/classroom.png"
 import "./login.css"
 import { AiOutlineEyeInvisible} from "react-icons/ai"
 import { NavLink } from 'reactstrap'
-
+import Navbar from './../navbarfiles/Navbar'
+import Footer from './../footerfiles/Footer'
 function Login() {
 
   const [show, setShow] = useState(false)
@@ -14,6 +15,8 @@ function Login() {
   }
 
   return (
+    <>
+    <Navbar/>
     <div data-aos="fade-zoom-in" className="login d-flex flex-column justify-content-center align-items-center">
       <div className="container-fluid">
 
@@ -59,6 +62,9 @@ function Login() {
 
       
     </div>
+
+    <Footer/>
+    </>
   )
 }
 

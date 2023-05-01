@@ -12,18 +12,14 @@
     font-weight: 600;
 }
 
-.col-md-6 .info-btn small{
+.coursehero .col-md-6 .info-btn small{
     border: 1px solid #030568;
     border-radius: .4rem;
-    width: 20%;
     font-size: 10px;
     font-weight: 700;
 }
 
-.col-md-6 .info-btn small:nth-child(3){
-    width: 40%;
-    
-}
+
 
 .outerbox{
     background-color: #000066;
@@ -257,6 +253,11 @@
 
     .more .col-md-2 img{
         transform: rotate(90deg);
+    }
+
+    .outerbox{
+        width: 80%;
+       
     }
 }
 

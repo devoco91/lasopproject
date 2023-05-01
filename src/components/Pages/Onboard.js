@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import classroom from "./../../assets/classroom.png"
 import { Stepper } from 'react-form-stepper';
 import "./onboard.css"
+import Navbar from './../navbarfiles/Navbar'
+import Footer from './../footerfiles/Footer'
 
 function Onboard() {
 
@@ -19,6 +21,8 @@ function Onboard() {
 
 
   return (
+    <>
+    <Navbar/>
     <div className="onboard container-fluid">
 
 
@@ -48,6 +52,8 @@ function Onboard() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

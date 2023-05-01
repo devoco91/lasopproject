@@ -306,7 +306,15 @@ const data = [
         ]
 
     },
-
 ]
+
+
+const centercodes = [
+    "OGBA: OG", 
+    "Olowoira: OL",
+    "Ajah: Aj"
+]
+
+export {centercodes}
 
 export default data
