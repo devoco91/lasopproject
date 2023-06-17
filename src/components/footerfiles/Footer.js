@@ -42,6 +42,7 @@ function Footer() {
                     <h5>Menu</h5>
                    <NavLink to='/'>Home</NavLink> 
                    <NavLink to='/about'>About</NavLink> 
+                   <NavLink to='/contact'>Contact us</NavLink> 
                    <NavLink to='/testimonials'>Testimonials</NavLink> 
                    <NavLink to='/faq'>FAQs</NavLink> 
                    <NavLink to='/blog'>Blog</NavLink> 
@@ -57,7 +58,7 @@ function Footer() {
                    <NavLink to='/calendar'>Academic Calendar</NavLink> 
                    <NavLink to='/hire'>Hire</NavLink>
                 </div>
-                <div className="col-md-2 socials">
+                <div className="col-md-2 socials mx-2">
                     <h5>Socials</h5>
                     <NavLink to="https://linkedin.com/company/lasopdotnet" ><i className="fa-brands fa-linkedin"></i>LinkedIn</NavLink>
 
